@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		88D8B3A827C1B55F00663E10 /* EyeTracking in Frameworks */ = {isa = PBXBuildFile; productRef = 88D8B3A727C1B55F00663E10 /* EyeTracking */; };
 		88DAFF3E27BF2C9F00CB7E0A /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DAFF3D27BF2C9F00CB7E0A /* Tests_iOS.swift */; };
 		88DAFF4027BF2C9F00CB7E0A /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DAFF3F27BF2C9F00CB7E0A /* Tests_iOSLaunchTests.swift */; };
 		88DAFF4A27BF2C9F00CB7E0A /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DAFF4927BF2C9F00CB7E0A /* Tests_macOS.swift */; };
@@ -56,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88D8B3A827C1B55F00663E10 /* EyeTracking in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,6 +159,9 @@
 			dependencies = (
 			);
 			name = "StudyHard (iOS)";
+			packageProductDependencies = (
+				88D8B3A727C1B55F00663E10 /* EyeTracking */,
+			);
 			productName = "StudyHard (iOS)";
 			productReference = 88DAFF2C27BF2C9F00CB7E0A /* StudyHard.app */;
 			productType = "com.apple.product-type.application";
@@ -249,6 +254,9 @@
 				Base,
 			);
 			mainGroup = 88DAFF1F27BF2C9A00CB7E0A;
+			packageReferences = (
+				88D8B3A627C1B55F00663E10 /* XCRemoteSwiftPackageReference "ios-eye-tracking" */,
+			);
 			productRefGroup = 88DAFF2D27BF2C9F00CB7E0A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -465,6 +473,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V5GGGSEQZM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -494,6 +503,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V5GGGSEQZM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -693,6 +703,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		88D8B3A627C1B55F00663E10 /* XCRemoteSwiftPackageReference "ios-eye-tracking" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kyle-fox/ios-eye-tracking";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		88D8B3A727C1B55F00663E10 /* EyeTracking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 88D8B3A627C1B55F00663E10 /* XCRemoteSwiftPackageReference "ios-eye-tracking" */;
+			productName = EyeTracking;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 88DAFF2027BF2C9A00CB7E0A /* Project object */;
 }
