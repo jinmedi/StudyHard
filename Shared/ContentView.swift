@@ -13,6 +13,7 @@ import EyeTracking
 
 
 let eyeTracking = EyeTracking(configuration: Configuration(appID: "ios-eye-tracking-example"))
+let dataSession = try? EyeTracking.export(sessionID: "8136AD7E-7262-4F07-A554-2605506B985D")
 
 struct ContentView: View {
     var body: some View {
@@ -24,12 +25,21 @@ struct ContentView: View {
             Button(action: {
                 print("start Button pressed")
                 eyeTracking.startSession()
+                // Optionally make any changes to the pointer
+               //  eyeTracking.pointer.backgroundColor = .red
+
+                // Begin displaying the pointer
+                eyeTracking.showPointer()
+                print(eyeTracking.pointer.frame)
+                
+
             }) {
                 Text("Start")
             }
             Spacer()
             Button(action: {
                 print("finish button pressed")
+                eyeTracking.hidePointer()
                 eyeTracking.endSession()
             }) {
                 Text("Finish")
