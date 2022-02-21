@@ -13,7 +13,18 @@ import EyeTracking
 
 
 let eyeTracking = EyeTracking(configuration: Configuration(appID: "ios-eye-tracking-example"))
+
+// Exports this session as `Data`, using the default Keys
 let dataSession = try? EyeTracking.export(sessionID: "8136AD7E-7262-4F07-A554-2605506B985D")
+
+// Exports this session as a `String`, converting the keys to snake case
+let stringSession = try? EyeTracking.exportString(sessionID: "8136AD7E-7262-4F07-A554-2605506B985D", with: .convertToSnakeCase)
+
+// Exports all `Session`s as `Data`, using the default keys
+let dataSessions = try? EyeTracking.exportAll()
+
+// Exports all `Session`s as a `String`, converting the keys to snake case
+let stringSessions = try? EyeTracking.exportAllString(with: .convertToSnakeCase)
 
 struct ContentView: View {
     var body: some View {
