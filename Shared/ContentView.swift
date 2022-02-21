@@ -7,11 +7,36 @@
 // test
 
 import SwiftUI
+import ARKit
+import Foundation
+import EyeTracking
+
+
+let eyeTracking = EyeTracking(configuration: Configuration(appID: "ios-eye-tracking-example"))
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack{
+            Text("Hello, world!_JY")
+                .padding()
+            Text("Hello, world!_JY")
+                .padding()
+            Button(action: {
+                print("start Button pressed")
+                eyeTracking.startSession()
+            }) {
+                Text("Start")
+            }
+            Spacer()
+            Button(action: {
+                print("finish button pressed")
+                eyeTracking.endSession()
+            }) {
+                Text("Finish")
+            }
+        }
+
+        
     }
 }
 
@@ -20,3 +45,5 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
+
