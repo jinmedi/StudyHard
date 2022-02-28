@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "GRDB",
+        "repositoryURL": "https://github.com/groue/GRDB.swift",
+        "state": {
+          "branch": null,
+          "revision": "5ee47c3c2765bdfde0f44c2ea9a263f6aa252d63",
+          "version": "4.14.0"
+        }
+      },
+      {
+        "package": "EyeTracking",
+        "repositoryURL": "https://github.com/kyle-fox/ios-eye-tracking",
+        "state": {
+          "branch": "master",
+          "revision": "cba4fff6db11acb248e45ec2498e8285303e236c",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
