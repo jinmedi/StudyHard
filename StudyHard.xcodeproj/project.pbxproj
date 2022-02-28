@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		88CECA0A27C9927E00B61BE9 /* alarmSample.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 88CECA0927C9927E00B61BE9 /* alarmSample.mp3 */; };
+		88CECA0B27C9927E00B61BE9 /* alarmSample.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 88CECA0927C9927E00B61BE9 /* alarmSample.mp3 */; };
+		88CECAA527CD853100B61BE9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CECAA427CD853000B61BE9 /* AppDelegate.swift */; };
+		88CECAA627CD853100B61BE9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CECAA427CD853000B61BE9 /* AppDelegate.swift */; };
+		88CECAA827CD897300B61BE9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CECAA727CD897300B61BE9 /* SceneDelegate.swift */; };
+		88CECAA927CD897300B61BE9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CECAA727CD897300B61BE9 /* SceneDelegate.swift */; };
 		88D8B3A827C1B55F00663E10 /* EyeTracking in Frameworks */ = {isa = PBXBuildFile; productRef = 88D8B3A727C1B55F00663E10 /* EyeTracking */; };
 		88DAFF3E27BF2C9F00CB7E0A /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DAFF3D27BF2C9F00CB7E0A /* Tests_iOS.swift */; };
 		88DAFF4027BF2C9F00CB7E0A /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DAFF3F27BF2C9F00CB7E0A /* Tests_iOSLaunchTests.swift */; };
@@ -38,6 +44,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		88CECA0927C9927E00B61BE9 /* alarmSample.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alarmSample.mp3; sourceTree = "<group>"; };
+		88CECA0C27C9942F00B61BE9 /* StudyHard (iOS).entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "StudyHard (iOS).entitlements"; sourceTree = "<group>"; };
+		88CECAA427CD853000B61BE9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		88CECAA727CD897300B61BE9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		88DAFF2527BF2C9A00CB7E0A /* StudyHardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyHardApp.swift; sourceTree = "<group>"; };
 		88DAFF2627BF2C9A00CB7E0A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		88DAFF2727BF2C9F00CB7E0A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -86,9 +96,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		88CECA0827C991BE00B61BE9 /* mp3 */ = {
+			isa = PBXGroup;
+			children = (
+				88CECA0927C9927E00B61BE9 /* alarmSample.mp3 */,
+			);
+			path = mp3;
+			sourceTree = "<group>";
+		};
 		88DAFF1F27BF2C9A00CB7E0A = {
 			isa = PBXGroup;
 			children = (
+				88CECA0C27C9942F00B61BE9 /* StudyHard (iOS).entitlements */,
+				88CECA0827C991BE00B61BE9 /* mp3 */,
 				EAFAD44D27C33617009C4D26 /* StudyHard--iOS--Info.plist */,
 				88DAFF2427BF2C9A00CB7E0A /* Shared */,
 				88DAFF3327BF2C9F00CB7E0A /* macOS */,
@@ -101,6 +121,8 @@
 		88DAFF2427BF2C9A00CB7E0A /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				88CECAA427CD853000B61BE9 /* AppDelegate.swift */,
+				88CECAA727CD897300B61BE9 /* SceneDelegate.swift */,
 				88DAFF2527BF2C9A00CB7E0A /* StudyHardApp.swift */,
 				88DAFF2627BF2C9A00CB7E0A /* ContentView.swift */,
 				88DAFF2727BF2C9F00CB7E0A /* Assets.xcassets */,
@@ -276,6 +298,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88CECA0A27C9927E00B61BE9 /* alarmSample.mp3 in Resources */,
 				88DAFF5127BF2C9F00CB7E0A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,6 +307,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88CECA0B27C9927E00B61BE9 /* alarmSample.mp3 in Resources */,
 				88DAFF5227BF2C9F00CB7E0A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -309,8 +333,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88CECAA527CD853100B61BE9 /* AppDelegate.swift in Sources */,
 				88DAFF4F27BF2C9F00CB7E0A /* ContentView.swift in Sources */,
 				88DAFF4D27BF2C9F00CB7E0A /* StudyHardApp.swift in Sources */,
+				88CECAA827CD897300B61BE9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,8 +344,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88CECAA627CD853100B61BE9 /* AppDelegate.swift in Sources */,
 				88DAFF5027BF2C9F00CB7E0A /* ContentView.swift in Sources */,
 				88DAFF4E27BF2C9F00CB7E0A /* StudyHardApp.swift in Sources */,
+				88CECAA927CD897300B61BE9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -473,18 +501,21 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "StudyHard (iOS).entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = V5GGGSEQZM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "StudyHard--iOS--Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = yes;
+				INFOPLIST_KEY_NSSiriUsageDescription = yes;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -504,18 +535,21 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "StudyHard (iOS).entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = V5GGGSEQZM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "StudyHard--iOS--Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = yes;
+				INFOPLIST_KEY_NSSiriUsageDescription = yes;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
